@@ -1,15 +1,15 @@
 {
-"Configuration.h" : [
+"Configuration.h" : [  
   {
     "op": "Custom",
     "searchfor": "PREHEAT_1_LABEL",
     "mask": "\".+\"",
-    "value": "\"Bed\""
+    "value": "\"PLA\""
   },
   {
     "op": "CustomVal",
     "searchfor": "PREHEAT_1_TEMP_HOTEND",
-    "value": "0"
+    "value": "200"
   },  
   {
     "op": "CustomVal",
@@ -20,17 +20,17 @@
     "op": "CustomVal",
     "searchfor": "PREHEAT_1_FAN_SPEED",
     "value": "0"
-  },  
+  },
   {
     "op": "Custom",
     "searchfor": "PREHEAT_2_LABEL",
     "mask": "\".+\"",
-    "value": "\"PLA\""
+    "value": "\"TPU\""
   },
   {
     "op": "CustomVal",
     "searchfor": "PREHEAT_2_TEMP_HOTEND",
-    "value": "200"
+    "value": "235"
   },  
   {
     "op": "CustomVal",
@@ -67,12 +67,12 @@
     "op": "Custom",
     "searchfor": "PREHEAT_4_LABEL",
     "mask": "\".+\"",
-    "value": "\"TPU\""
+    "value": "\"Bed\""
   },
   {
     "op": "CustomVal",
     "searchfor": "PREHEAT_4_TEMP_HOTEND",
-    "value": "235"
+    "value": "0"
   },  
   {
     "op": "CustomVal",
