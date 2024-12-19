@@ -4,7 +4,7 @@
     "op": "Custom",
     "searchfor": "PREHEAT_1_LABEL",
     "mask": "\".+\"",
-    "value": "\"Preheat Bed\""
+    "value": "\"Bed\""
   },
   {
     "op": "CustomVal",
