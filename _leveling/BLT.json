@@ -60,6 +60,10 @@
     "comment": "MRiscoC BLTouch auto level"
   },
   {
+    "op": "Enable",
+    "searchfor": "ENABLE_LEVELING_AFTER_G28"
+  },
+  {
     "op": "CustomVal",
     "searchfor": "LEVELING_NOZZLE_TEMP",
     "value": "  0",
