@@ -6,11 +6,6 @@
     "comment": "Luro02 Suggested Memory Savings - Not sure how much this saves"
   },
   {
-    "op": "Enable",
-    "searchfor": "DISABLE_M503",
-    "comment": "Luro02 Suggested Memory Savings"
-  },
-  {
     "op": "Disable",
     "searchfor": "PRINTCOUNTER",
     "comment": "Luro02 Suggested Memory Savings"
