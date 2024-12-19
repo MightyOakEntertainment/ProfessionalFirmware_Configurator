@@ -1,0 +1,13 @@
+{
+"Configuration.h" : [
+],
+"Configuration_adv.h" : [
+  {
+    "op": "Disable",
+    "searchfor": "ARC_SUPPORT",
+    "comment": "Luro02 Suggested Memory Savings"
+  }
+],
+"Version.h" : [
+]   
+}

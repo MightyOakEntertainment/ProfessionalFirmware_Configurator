@@ -44,16 +44,6 @@
   },
   {
     "op": "Disable",
-    "searchfor": "CUSTOM_FIRMWARE_UPLOAD",
-    "comment": "Luro02 Suggested Memory Savings"
-  },
-  {
-    "op": "Disable",
-    "searchfor": "ARC_SUPPORT",
-    "comment": "Luro02 Suggested Memory Savings"
-  },
-  {
-    "op": "Disable",
     "searchfor": "FWRETRACT",
     "comment": "Luro02 Suggested Memory Savings"
   }

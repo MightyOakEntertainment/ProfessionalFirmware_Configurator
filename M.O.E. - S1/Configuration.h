@@ -3439,7 +3439,7 @@
   #define SHOW_REAL_POS        // Display the real axes position in cartesian printers
   //#define ACTIVATE_MESH_ITEM   // Allows temporary enabling of mesh leveling
   #define RUNOUT_TUNE_ITEM     // Allows enable/disable the run out filament sensor while printing
-  #define PLR_TUNE_ITEM        // Allows enable/disable the power lost recovery while printing
+  //#define PLR_TUNE_ITEM        // Allows enable/disable the power lost recovery while printing  //   // Enable only if Power loss recovery is enabled
   #define JD_TUNE_ITEM         // Enable only if Juntion Deviation is enabled
   #define ADVK_TUNE_ITEM       // Enable only if Linear Advance is enabled
   //#define MEDIASORT_MENU_ITEM  // Allows enable/disable file list sorting
