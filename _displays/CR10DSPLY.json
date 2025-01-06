@@ -32,21 +32,21 @@
     "searchfor": "LCD_BACKLIGHT_TIMEOUT_MINS"
   },
   {
-    "op": "Disable",
+    "op": "Enable",
     "searchfor": "LCD_INFO_MENU"
   },
   {
     "op": "CustomVal",
     "searchfor": "BOOTSCREEN_TIMEOUT",
-    "value": "1000",
+    "value": "4000",
     "comment": "Simulator"
   },
   {
-    "op": "Disable",
+    "op": "Enable",
     "searchfor": "SHOW_CUSTOM_BOOTSCREEN"
   },
   {
-    "op": "Disable",
+    "op": "Enable",
     "searchfor": "CUSTOM_STATUS_SCREEN_IMAGE"
   }
 ],

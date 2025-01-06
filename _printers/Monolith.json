@@ -4,13 +4,13 @@
     "op": "Custom",
     "searchfor": "STRING_CONFIG_H_AUTHOR",
     "mask": "\".+\"",
-    "value": "\"(Dracrius, Ender 3 S1 F4)\""
+    "value": "\"(Dracrius, Ender 3 Pro)\""
   },
   {
     "op": "Custom",
     "searchfor": "CUSTOM_MACHINE_NAME",
     "mask": "\".+\"",
-    "value": "\"M.O.E. - S1\""
+    "value": "\"Monolith\""
   },
   {
     "op": "CustomVal",
@@ -21,17 +21,17 @@
   {
     "op": "CustomVal",
     "searchfor": "INVERT_X_DIR",
-    "value":"false"
+    "value":"true"
   },
   {
     "op": "CustomVal",
     "searchfor": "INVERT_Y_DIR",
-    "value":"false"
+    "value":"true"
   },
   {
     "op": "CustomVal",
     "searchfor": "INVERT_Z_DIR",
-    "value":"true"
+    "value":"false"
   },
   {
     "op": "CustomVal",
@@ -47,6 +47,12 @@
   },
   {
     "op": "CustomVal",
+    "searchfor": "HEATER_0_MAXTEMP",
+    "value": "260",
+    "comment": "PTFE Tube Safe Guard"
+  },
+  {
+    "op": "CustomVal",
     "searchfor": "BED_MINTEMP",
     "value": "5",
     "comment": "Ender Configs"
@@ -54,118 +60,125 @@
   {
     "op": "CustomVal",
     "searchfor": "BED_MAXTEMP",
-    "value": "120",
-    "comment": "Ender 3 S1 Configs"
+    "value": "90",
+    "comment": "Ender Configs"
   },
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_Kp",
-    "value": "28.3"
+    "value": "19.2"
   },
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_Ki",
-    "value": "3.08"
+    "value": "1.35"
   },
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_Kd",
-    "value": "65.08"
+    "value": "68.49"
   },
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_bedKp",
-    "value": "168.34"
+    "value": "462.10"
   },
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_bedKi",
-    "value": "31.88"
+    "value": " 85.47"
   },
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_bedKd",
-    "value": "592.56"
+    "value": "624.59"
   },
   {
     "op": "Custom",
     "searchfor": "DEFAULT_AXIS_STEPS_PER_UNIT",
     "mask": "{.*}",
-    "value":"{ 80, 80, 400, 424.9 }",
-    "comment": "MRiscoC Tune (Ender Configs - 80, 80, 400, 430)"
+    "value":"{ 80, 80, 400, 93 }",
+    "comment": "Ender Configs"
+  },
+  {
+    "op": "Custom",
+    "searchfor": "DEFAULT_MAX_FEEDRATE",
+    "mask": "{.*}",
+    "value":"{ 500, 500, 5, 45 }",
+    "comment": "Ender Configs"
   },
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_XJERK",
-    "value": "5.0",
-    "comment": "MRiscoC Tune (Ender Configs 10)"
-  },
+    "value": "10.0",
+    "comment": "Ender Configs"
+  },  
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_YJERK",
-    "value": "5.0",
-    "comment": "MRiscoC Tune (Ender Configs 10)"
-  },
+    "value": "10.0",
+    "comment": "Ender Configs"
+  },  
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_ZJERK",
     "value": "0.3",
     "comment": "Ender Configs"
-  },
+  },  
   {
     "op": "CustomVal",
     "searchfor": "DEFAULT_EJERK",
     "value": "5.0",
     "comment": "Ender Configs"
-  },
+  },  
   {
     "op": "Custom",
     "searchfor": "NOZZLE_TO_PROBE_OFFSET",
     "mask": "{.*}",
-    "value":"{ -47.32, 0, -1.02 }",
-    "comment": "Mighty Oak Minimal Z Offset With HeroMe Duct"
+    "value":"{ -40, 6, -1.35 }",
+    "comment": "HeroMe BLTouch offset"
   },
   {
     "op": "CustomVal",
     "searchfor": "X_BED_SIZE",
     "value": "235",
-    "comment": "True Bed Size (MRiscoC Max usable bed size 220)"
+    "comment": "MRiscoC Max usable bed size"
   },
   {
     "op": "CustomVal",
     "searchfor": "Y_BED_SIZE",
-    "value": "231",
-    "comment": "True Bed Size 235, Y axis movement makes useable 231 (MRiscoC Max usable bed size)"
+    "value": "235",
+    "comment": "MRiscoC Max usable bed size"
   },
   {
     "op": "CustomVal",
     "searchfor": "X_MIN_POS",
-    "value": "-3.5",
-    "comment": "MOE S1 measured physical limit"
+    "value": "0",
+    "comment": "MRiscoC Stock physical limit"
   },
   {
     "op": "CustomVal",
     "searchfor": "Y_MIN_POS",
-    "value": "-2",
+    "value": "0",
     "comment": "MRiscoC Stock physical limit"
   },
   {
     "op": "CustomVal",
     "searchfor": "X_MAX_POS",
-    "value": "238.5",
+    "value": "235",
     "comment": "MRiscoC Stock physical limit"
   },
   {
     "op": "CustomVal",
     "searchfor": "Y_MAX_POS",
-    "value": "233",
+    "value": "235",
     "comment": "MRiscoC Stock physical limit"
   },
   {
     "op": "CustomVal",
     "searchfor": "Z_MAX_POS",
-    "value": "275",
-    "comment": "Ender 3 S1 Configs"
+    "value": "240",
+    "comment": "Ender 3 Cable Chain Limit"
   },
   {
     "op": "CustomVal",
@@ -177,27 +190,32 @@
     "op": "CustomVal",
     "searchfor": "MESH_INSET",
     "value": "1",
-    "comment": "Max probing Area (MRiscoC Center mesh 38)"
-  },
-  {
-    "op": "Disable",
-    "searchfor": "ABL_BILINEAR_SUBDIVISION",
-    "comment": "Original Ender 3 S1 Configs set this to Enable"
-  },
-  {
-    "op": "CustomVal",
-    "searchfor": "BILINEAR_SUBDIVISIONS",
-    "value": "5",
-    "comment": "Ender 3 S1 Configs"
+    "comment": "MRiscoC Center mesh"
   },
   {
     "op": "Custom",
     "searchfor": "NOZZLE_PARK_POINT",
     "mask": "{.*}",
     "value":"{ 2, (Y_MAX_POS - 2), 20 }"
+  },
+  {
+    "op": "Enable",
+    "searchfor": "FAN_SOFT_PWM"
   }
 ],
 "Configuration_adv.h" : [
+  {
+    "op": "CustomVal",
+    "searchfor": "FILAMENT_CHANGE_UNLOAD_LENGTH",
+    "value": "375",
+    "comment": "Monolith Bowden"
+  },
+  {
+    "op": "CustomVal",
+    "searchfor": "FILAMENT_CHANGE_FAST_LOAD_LENGTH",
+    "value": "375",
+    "comment": "Monolith Bowden"
+  },
   {
     "op": "CustomVal",
     "searchfor": "PAUSE_PARK_NOZZLE_TIMEOUT",
@@ -205,10 +223,34 @@
     "comment": "ADHD window!"
   },
   {
+    "op": "CustomVal",
+    "searchfor": "X_HYBRID_THRESHOLD",
+    "value": "500",
+    "comment": "Monolith - Less Noise"
+  },
+  {
+    "op": "CustomVal",
+    "searchfor": "Y_HYBRID_THRESHOLD",
+    "value": "500",
+    "comment": "Monolith - Less Noise"
+  },
+  {
+    "op": "CustomVal",
+    "searchfor": "Z_HYBRID_THRESHOLD",
+    "value": "5",
+    "comment": "Monolith - Less Noise"
+  },
+  {
+    "op": "CustomVal",
+    "searchfor": "E0_HYBRID_THRESHOLD",
+    "value": "0",
+    "comment": "Monolith - Less Noise"
+  },
+  {
     "op": "Custom",
     "searchfor": "TRAMMING_POINT_XY",
     "mask": "{.*}",
-    "value":"{ { 30, 30 }, { 205, 205 }, { 205, 30 }, { 30, 205 } }"
+    "value":"{ { 29, 29 }, { 199, 29 }, { 199, 199 }, { 29, 199 } }"
   },
   {
     "op": "CustomVal",
@@ -218,8 +260,8 @@
   {
     "op": "CustomVal",
     "searchfor": "RETRACT_LENGTH",
-    "value": "0.5",
-    "comment": "Ender 3 S1 Configs (MRiscoC Directdrive 1)"
+    "value": "5",
+    "comment": "MRiscoC Bowden"
   },
   {
     "op": "CustomVal",
@@ -230,8 +272,8 @@
   {
     "op": "CustomVal",
     "searchfor": "RETRACT_RECOVER_FEEDRATE",
-    "value": "8",
-    "comment": "Ender 3 S1 Configs (MRiscoC Bowden 40)"
+    "value": "40",
+    "comment": "MRiscoC Bowden"
   },
   {
     "op": "Custom",
@@ -267,7 +309,7 @@
     "op": "Custom",
     "searchfor": "MACHINE_NAME",
     "mask": "\".+\"",
-    "value": "\"M.O.E. - S1\""
+    "value": "\"Monolith\""
   }
 ]   
 }
