@@ -210,7 +210,7 @@
 "Configuration_adv.h" : [
   {
     "op": "Disable",
-    "searchfor": "SHOW_BOOTSCREEN"
+    "searchfor": "SHOW_BOOTSCREEN",
     "comment": "Monolith needed to fit in 256K"
   },
   {

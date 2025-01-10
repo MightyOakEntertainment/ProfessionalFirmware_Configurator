@@ -84,7 +84,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
  */
-#define SERIAL_PORT 2
+#define SERIAL_PORT -1
 #define NO_AUTO_ASSIGN_WARNING  // Disable serial warnings
 
 /**
@@ -1890,14 +1890,14 @@
 
 // The size of the printable area
 #define X_BED_SIZE 235  // MRiscoC Max usable bed size
-#define Y_BED_SIZE 235  // MRiscoC Max usable bed size
+#define Y_BED_SIZE 230  // MRiscoC Max usable bed size
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0  // MRiscoC Stock physical limit
-#define Y_MIN_POS 0  // MRiscoC Stock physical limit
+#define Y_MIN_POS -13.5  // MRiscoC Stock physical limit
 #define Z_MIN_POS 0
 #define X_MAX_POS 235  // MRiscoC Stock physical limit
-#define Y_MAX_POS 235  // MRiscoC Stock physical limit
+#define Y_MAX_POS 243.5  // MRiscoC Stock physical limit
 #define Z_MAX_POS 240  // Ender 3 Cable Chain Limit
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50

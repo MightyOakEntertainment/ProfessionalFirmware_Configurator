@@ -140,7 +140,7 @@
   {
     "op": "Replace",
     "searchfor": "default_envs = mega2560",
-    "value": "default_envs = STM32F103RC_btt_512K_USB"
+    "value": "default_envs = STM32F103RC_btt_maple"
   }
 ]
 }
