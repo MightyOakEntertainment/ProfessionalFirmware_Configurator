@@ -209,6 +209,11 @@
 ],
 "Configuration_adv.h" : [
   {
+    "op": "Disable",
+    "searchfor": "SHOW_BOOTSCREEN"
+    "comment": "Monolith needed to fit in 256K"
+  },
+  {
     "op": "CustomVal",
     "searchfor": "FILAMENT_CHANGE_UNLOAD_LENGTH",
     "value": "375",
@@ -225,30 +230,6 @@
     "searchfor": "PAUSE_PARK_NOZZLE_TIMEOUT",
     "value": "120",
     "comment": "ADHD window!"
-  },
-  {
-    "op": "CustomVal",
-    "searchfor": "X_HYBRID_THRESHOLD",
-    "value": "500",
-    "comment": "Monolith - Less Noise"
-  },
-  {
-    "op": "CustomVal",
-    "searchfor": "Y_HYBRID_THRESHOLD",
-    "value": "500",
-    "comment": "Monolith - Less Noise"
-  },
-  {
-    "op": "CustomVal",
-    "searchfor": "Z_HYBRID_THRESHOLD",
-    "value": "5",
-    "comment": "Monolith - Less Noise"
-  },
-  {
-    "op": "CustomVal",
-    "searchfor": "E0_HYBRID_THRESHOLD",
-    "value": "0",
-    "comment": "Monolith - Less Noise"
   },
   {
     "op": "Custom",
