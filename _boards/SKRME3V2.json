@@ -9,7 +9,7 @@
   {
     "op": "CustomVal",
     "searchfor": "SERIAL_PORT",
-    "value": "2"
+    "value": "-1"
   },
   {
     "op": "CustomVal",

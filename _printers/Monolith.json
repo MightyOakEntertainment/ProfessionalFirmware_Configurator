@@ -147,7 +147,7 @@
   {
     "op": "CustomVal",
     "searchfor": "Y_BED_SIZE",
-    "value": "235",
+    "value": "230",
     "comment": "MRiscoC Max usable bed size"
   },
   {
@@ -159,7 +159,7 @@
   {
     "op": "CustomVal",
     "searchfor": "Y_MIN_POS",
-    "value": "0",
+    "value": "-13.5",
     "comment": "MRiscoC Stock physical limit"
   },
   {
@@ -171,7 +171,7 @@
   {
     "op": "CustomVal",
     "searchfor": "Y_MAX_POS",
-    "value": "235",
+    "value": "243.5",
     "comment": "MRiscoC Stock physical limit"
   },
   {
@@ -201,6 +201,10 @@
   {
     "op": "Enable",
     "searchfor": "FAN_SOFT_PWM"
+  },
+  {
+    "op": "Enable",
+    "searchfor": "Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN"
   }
 ],
 "Configuration_adv.h" : [
