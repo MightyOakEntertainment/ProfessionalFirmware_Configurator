@@ -139,15 +139,22 @@
     "comment": "HeroMe BLTouch offset"
   },
   {
+    "op": "Custom",
+    "searchfor": "BED_TRAMMING_INSET_LFRB",
+    "mask": "{.*}",
+    "value":"{ 40, 30, 40, 30 }",
+    "comment": "for Monolith to prevent Build errors from Probe Offset"
+  },
+  {
     "op": "CustomVal",
     "searchfor": "X_BED_SIZE",
-    "value": "235",
+    "value": "233",
     "comment": "MRiscoC Max usable bed size"
   },
   {
     "op": "CustomVal",
     "searchfor": "Y_BED_SIZE",
-    "value": "230",
+    "value": "227.9",
     "comment": "MRiscoC Max usable bed size"
   },
   {
@@ -165,13 +172,13 @@
   {
     "op": "CustomVal",
     "searchfor": "X_MAX_POS",
-    "value": "235",
+    "value": "233",
     "comment": "MRiscoC Stock physical limit"
   },
   {
     "op": "CustomVal",
     "searchfor": "Y_MAX_POS",
-    "value": "243.5",
+    "value": "241.4",
     "comment": "MRiscoC Stock physical limit"
   },
   {

@@ -72,6 +72,7 @@
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
   #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V2_0  // BTT SKR MINI E3 V2
+#define DIAG_JUMPERS_REMOVED  // Disable DIAG Jumpers warnings
 #endif
 
 // @section serial
@@ -602,6 +603,10 @@
 #if TEMP_SENSOR_IS_MAX_TC(2)
   #define MAX31865_SENSOR_OHMS_2      100
   #define MAX31865_CALIBRATION_OHMS_2 430
+#endif
+#if TEMP_SENSOR_IS_MAX_TC(BED)
+  #define MAX31865_SENSOR_OHMS_BED      100
+  #define MAX31865_CALIBRATION_OHMS_BED 430
 #endif
 
 #if HAS_E_TEMP_SENSOR
@@ -1409,7 +1414,7 @@
  * The probe replaces the Z-MIN endstop and is used for Z homing.
  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
  */
-//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN  // Probe connected to BLTouch port
+#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
 #define USE_PROBE_FOR_Z_HOMING
@@ -1889,15 +1894,15 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 235  // MRiscoC Max usable bed size
-#define Y_BED_SIZE 230  // MRiscoC Max usable bed size
+#define X_BED_SIZE 233  // MRiscoC Max usable bed size
+#define Y_BED_SIZE 227.9  // MRiscoC Max usable bed size
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0  // MRiscoC Stock physical limit
 #define Y_MIN_POS -13.5  // MRiscoC Stock physical limit
 #define Z_MIN_POS 0
-#define X_MAX_POS 235  // MRiscoC Stock physical limit
-#define Y_MAX_POS 243.5  // MRiscoC Stock physical limit
+#define X_MAX_POS 233  // MRiscoC Stock physical limit
+#define Y_MAX_POS 241.4  // MRiscoC Stock physical limit
 #define Z_MAX_POS 240  // Ender 3 Cable Chain Limit
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
@@ -2116,6 +2121,12 @@
 //#define MESH_BED_LEVELING
 
 /**
+ * Commands to execute at the start of G29 probing,
+ * after switching to the PROBING_TOOL.
+ */
+//#define EVENT_GCODE_BEFORE_G29 "M300 P440 S200"
+
+/**
  * Commands to execute at the end of G29 probing.
  * Useful to retract or move the Z probe out of the way.
  */
@@ -2286,7 +2297,7 @@
 #define LCD_BED_TRAMMING  // ProUI has a bed tramming menu
 
 #if ENABLED(LCD_BED_TRAMMING)
-  #define BED_TRAMMING_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets  // ProUI use mesh insets for bed tramming
+  #define BED_TRAMMING_INSET_LFRB { 40, 30, 40, 30 } // (mm) Left, Front, Right, Back insets  // for Monolith to prevent Build errors from Probe Offset
   #define BED_TRAMMING_HEIGHT      0.0        // (mm) Z height of nozzle at tramming points
   #define BED_TRAMMING_Z_HOP       5.0        // (mm) Z raise between tramming points
   //#define BED_TRAMMING_INCLUDE_CENTER       // Move to the center after the last corner

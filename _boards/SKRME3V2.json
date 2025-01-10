@@ -7,6 +7,11 @@
     "comment": "BTT SKR MINI E3 V2"
   },
   {
+    "op": "InsertAfter",
+    "searchfor": "#define MOTHERBOARD",
+    "newline": "#define DIAG_JUMPERS_REMOVED  // Disable DIAG Jumpers warnings"
+  },
+  {
     "op": "CustomVal",
     "searchfor": "SERIAL_PORT",
     "value": "-1"
@@ -140,7 +145,7 @@
   {
     "op": "Replace",
     "searchfor": "default_envs = mega2560",
-    "value": "default_envs = STM32F103RC_btt_maple"
+    "value": "default_envs = STM32F103RC_btt_512K_USB"
   }
 ]
 }

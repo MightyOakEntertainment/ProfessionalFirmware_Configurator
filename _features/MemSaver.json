@@ -41,6 +41,16 @@
     "op": "Disable",
     "searchfor": "FWRETRACT",
     "comment": "Luro02 Suggested Memory Savings"
+  },
+  {
+    "op": "Disable",
+    "searchfor": "CONFIGURE_FILAMENT_CHANGE",
+    "comment": "Dracrius Additional Memory Savings"
+  },
+  {
+    "op": "Disable",
+    "searchfor": "CAPABILITIES_REPORT",
+    "comment": "Dracrius Additional Memory Savings"
   }
 ],
 "Version.h" : [

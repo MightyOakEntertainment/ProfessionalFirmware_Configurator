@@ -1,11 +1,6 @@
 {
 "Configuration.h" : [
   {
-    "op": "Disable",
-    "searchfor": "Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN",
-    "comment": "Probe connected to BLTouch port"
-  },
-  {
     "op": "Enable",
     "searchfor": "USE_PROBE_FOR_Z_HOMING"
   },
@@ -73,11 +68,6 @@
     "op": "Enable",
     "searchfor": "Z_SAFE_HOMING",
     "comment": "MRiscoC Homing Z at center of bed"
-  },
-  {
-    "op": "Disable",
-    "searchfor": "BED_TRAMMING_INSET_LFRB",
-    "comment": "ProUI use mesh insets for bed tramming"
   },
   {
     "op": "Enable",
