@@ -97,8 +97,8 @@
     "op": "Custom",
     "searchfor": "DEFAULT_AXIS_STEPS_PER_UNIT",
     "mask": "{.*}",
-    "value":"{ 80, 80, 400, 93 }",
-    "comment": "Ender Configs"
+    "value":"{ 80, 80, 400, 415 }",
+    "comment": "Bondtech BMG Extruder"
   },
   {
     "op": "Custom",
